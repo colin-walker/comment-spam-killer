@@ -87,9 +87,9 @@ function kill_spam_comments() {
 		
 		foreach($phrases as $phrase) {
 			if(!empty($phrase)) {
-    			if(strpos($lower_case_comment, $phrase, $offset) !== false) {
+    			        if(strpos($lower_case_comment, $phrase, $offset) !== false) {
 					wp_die( __('Sorry, I will not tolerate comment spam. Banned term: ' . $phrase, 'No comment spam!') );
-    			}
+    			        }
 			}
 		}
 	}

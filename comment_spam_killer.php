@@ -58,12 +58,12 @@
 	function comment_spam_settings_page() { ?>
 		<div class="wrap">
 		<h2>Comment spam</h2>
-		<p>The spam terms added below will prevent comments from being saved that contain theme.</p>
+		<p>The spam terms added below will prevent comments from being saved that contain them.</p>
 		<p>Add multiple terms as comma separated values.</p>
 
 		<form method="post" action="options.php">
 			<?php settings_fields( 'comment-spam-settings-group' ); ?>
-			<p>Terms to forbid:</p>
+			<p>Terms to prohibit:</p>
 			<input type="text" name="spamphrases" value="<?php echo esc_attr( get_option('spamphrases') ); ?>" size="50" />
 			<br />
 			<?php submit_button(); ?>

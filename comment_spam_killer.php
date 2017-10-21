@@ -59,7 +59,7 @@
 		<div class="wrap">
 		<h2>Comment spam</h2>
 		<p>The spam terms added below will prevent comments from being saved that contain theme.</p>
-		<p>Add multiple terms each on separate lines</p>
+		<p>Add multiple terms as comma separated values.</p>
 
 		<form method="post" action="options.php">
 			<?php settings_fields( 'comment-spam-settings-group' ); ?>

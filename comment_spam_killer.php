@@ -64,7 +64,7 @@
 		<form method="post" action="options.php">
 			<?php settings_fields( 'comment-spam-settings-group' ); ?>
 			<p>Terms to prohibit:</p>
-			<input type="text" name="spamphrases" value="<?php echo esc_attr( get_option('spamphrases') ); ?>" size="50" />
+			<textarea name="spamphrases" rows="4" cols="50"><?php echo esc_attr( get_option('spamphrases') ); ?></textarea>
 			<br />
 			<?php submit_button(); ?>
 		</form>
